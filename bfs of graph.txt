@@ -1,0 +1,16 @@
+   boolean visited[]=new boolean[N];
+        Queue<Integer> q = new LinkedList<Integer>();
+        ArrayList<Integer> res = new ArrayList<>();
+        visited[0]=true;
+        q.add(0);
+        while(!q.isEmpty()){
+            int temp=q.poll();
+            res.add(temp);
+            for(int i:g.get(temp)){
+                if(!visited[i]){
+                    visited[i]=true;
+                    q.add(i);
+                }
+            }
+        }
+        return res;

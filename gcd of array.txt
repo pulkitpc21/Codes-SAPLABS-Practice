@@ -1,0 +1,14 @@
+int gcdutil(int a,int b){
+	    return (a==0)?b:gcdutil(b%a,a);
+	}
+    int gcd(int N, int arr[])
+    {
+    	int result=arr[0];
+    	for(int i=1;i<N;i++){
+    	    result=gcdutil(arr[i],result);
+    	    if(result==1){
+    	        return 1;
+    	    }
+    	}
+    	return result;
+    }

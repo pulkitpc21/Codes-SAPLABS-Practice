@@ -1,0 +1,15 @@
+int isPowerOfAnother(long long X, long long Y){
+        if (X == 1){ 
+            if(Y == 1)
+                return 1;
+            else
+                return 0;
+        }
+        long int pow = 1; 
+        while (pow < Y) 
+            pow *= X; 
+        if(pow == Y)
+            return 1;
+        else
+            return 0;
+    }

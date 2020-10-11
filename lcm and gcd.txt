@@ -1,0 +1,12 @@
+static Long gcd(Long a,Long b){
+        if(a==0)
+        return b;
+        return gcd(b%a,a);
+    }
+    static Long lcm(Long a,Long b){
+        return (a/gcd(a,b))*b;
+    }
+    static Long[] lcmAndGcd(Long A , Long B) {
+       Long arr[]={lcm(A,B),gcd(A,B)};
+       return arr;
+    }

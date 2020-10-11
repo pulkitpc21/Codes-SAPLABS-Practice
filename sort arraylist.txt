@@ -1,0 +1,11 @@
+import java.util.*;
+class A{
+    public static void main(String args []){
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("A");
+        list.add("K");
+        list.add("B");
+        Collections.sort(list);
+        System.out.println(list);
+    }
+}

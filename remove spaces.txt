@@ -1,0 +1,11 @@
+public static void main (String[] args) throws IOException
+	 {
+	 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	 int t=Integer.parseInt(br.readLine());
+	 while(t--!=0){
+	     String[] str=br.readLine().replaceAll(" ","").split(" ");
+	     for(String s: str)
+	     System.out.print(s);
+	     System.out.println();
+	 }
+	 }
